@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voltage Drop Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Voltage Drop Calculator</h2>
+        
+        <label for="voltage">Voltage (V):</label>
+        <input type="number" id="voltage" placeholder="Enter voltage">
+
+        <label for="current">Current (A):</label>
+        <input type="number" id="current" placeholder="Enter current">
+
+        <label for="length">Cable Length (m):</label>
+        <input type="number" id="length" placeholder="Enter cable length">
+
+        <label for="resistance">Cable Resistance (Ω/m):</label>
+        <input type="number" id="resistance" placeholder="Enter resistance per meter">
+
+        <button onclick="calculateVoltageDrop()">Calculate</button>
+
+        <h3>Voltage Drop: <span id="result">0</span> V</h3>
+    </div>
+
+    <script src="voltage-drop.js"></script>
+</body>
+</html>

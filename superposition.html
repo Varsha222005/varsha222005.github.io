@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superposition Theorem Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Superposition Theorem Calculator</h1>
+    <div class="container">
+        <label for="voltages">Enter Voltage Sources (comma separated, V):</label>
+        <input type="text" id="voltages" placeholder="e.g. 10, 5">
+
+        <label for="resistances">Enter Resistances (comma separated, Ω):</label>
+        <input type="text" id="resistances" placeholder="e.g. 4, 6, 8">
+
+        <button onclick="calculateSuperposition()">Calculate</button>
+        
+        <h2>Results</h2>
+        <p id="result"></p>
+    </div>
+
+    <script src="superposition.js"></script>
+</body>
+</html>

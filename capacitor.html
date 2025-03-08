@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacitor Charging Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Capacitor Charging Calculator</h1>
+    <label for="capacitance">Capacitance (F):</label>
+    <input type="number" id="capacitance" placeholder="Enter capacitance">
+
+    <label for="resistance">Resistance (Ω):</label>
+    <input type="number" id="resistance" placeholder="Enter resistance">
+
+    <label for="time">Time (s):</label>
+    <input type="number" id="time" placeholder="Enter time">
+
+    <button onclick="calculateVoltage()">Calculate</button>
+
+    <h2>Voltage across capacitor: <span id="result"></span> V</h2>
+
+    <script src="capacitor.js"></script>
+</body>
+</html>
