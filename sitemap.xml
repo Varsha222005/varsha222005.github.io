@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://varsha222005.github.io/</loc>
@@ -6,4 +5,26 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>https://varsha222005.github.io/superposition.html</loc>
+        <lastmod>2025-03-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://varsha222005.github.io/power.html</loc>
+        <lastmod>2025-03-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    <url> 
+    <url>
+        <loc>https://varsha222005.github.io/ohm.html</loc></url>
+    <url><loc>https://varsha222005.github.io/capacitor.html</loc></url>
+    <url><loc>https://varsha222005.github.io/index.html</loc></url>
+    <url><loc>https://varsha222005.github.io/parallel-series.html</loc></url>
+    <url><loc>https://varsha222005.github.io/power-factor.html</loc></url>
+    <url><loc>https://varsha222005.github.io/voltage-drop.html</loc></url>
+        
+  
+    
 </urlset>
