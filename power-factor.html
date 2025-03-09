@@ -8,8 +8,11 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            text-align: center;
+            text-align: justify;
             padding: 50px;
+        }
+        h2{
+            text-align: center;
         }
         .container {
             background: white;
@@ -34,10 +37,20 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        button:hover {
-            background-color: #0056b3;
-        }
-        #result {
+       button :hover{
+        background-color: #0056b3;
+       }
+       .container label {
+    display: block; /* Make each label take full width */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Optional: make labels bold */
+    margin-bottom: 5px; /* Add some spacing */
+}
+
+
+          
+       #result {
+            text-align: center;
             font-weight: bold;
             margin-top: 15px;
         }
@@ -47,6 +60,13 @@
 
     <div class="container">
         <h2>Power Factor Correction Calculator</h2>
+        <p>Power Factor Correction Calculator
+
+            helps improve the power factor of an electrical system by determining the required capacitor value for correction.</p> <p>It uses the formula:
+            
+                Qc = P × (tan A(initial) - tan A(desired))
+                </p>
+            <p>where Qc is the reactive power to be compensated. The tool calculates the necessary capacitor size to reduce reactive power and improve efficiency, reducing energy losses and costs. Ideal for engineers optimizing AC power systems!</p>
         <label>Real Power (kW):</label>
         <input type="number" id="realPower" placeholder="Enter real power">
 

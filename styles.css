@@ -262,3 +262,222 @@ input, select {
     padding: 10px;
     border-radius: 5px;
 }
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eaf2ff; /* Light blue background */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.features-list {
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.features-list li {
+    margin-bottom: 5px;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eaf2ff; /* Light blue background */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.features-list {
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.features-list li {
+    margin-bottom: 5px;
+}
+.features-container {
+    text-align: left;
+    margin-left: 15%;
+    margin-bottom: 5px; /* Reduce space below Features */
+}
+
+.features-container h4 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px; /* Reduce gap between heading and list */
+}
+
+.features-list {
+    padding-left: 20px;
+    list-style-type: disc; /* Keeps bullet points */
+    margin-top: 0; /* Remove unnecessary space above list */
+}
+
+.description {
+    text-align: justify;
+    max-width: 80%;
+    margin: 0 auto 20px auto; /* Center and add spacing below */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ 
+.container h4 {
+    text-align: justify;
+    font-weight: normal; /* Removes bold effect */
+}
+p {
+    text-align: justify;
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+p {
+    text-align: justify;
+    max-width: 90%; /* Adjust width as needed */
+    margin: 0 auto; /* Centers text block */
+    font-size: 1em; /* Ensures uniform font size */
+    line-height: 1.5; /* Improves readability */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 50px;
+}
+
+button {
+    display: block;  /* Make it a block element */
+    width: 90%;      /* Adjust width as needed */
+    padding: 10px;
+    margin: 20px auto; /* Auto margins will center it horizontally */
+    background-color: #0095FF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
