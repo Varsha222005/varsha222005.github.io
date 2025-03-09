@@ -6,22 +6,30 @@
     <title>Ohm's Law Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    p{text-align: justify;}
+</style>
 <body>
     <h2>Ohm's Law Calculator</h2>
     <p>The Ohm’s Law Calculator helps you quickly determine voltage (V), current (I), resistance (R), or power (P) in an electrical circuit. Based on Ohm’s Law (V = IR), this tool allows you to input any two values and calculate the missing parameters instantly.</p>
-    <label for="voltage">Voltage (V):</label>
-    <input type="number" id="voltage" placeholder="Enter voltage">
+    <div class="input-box">
+        <label for="voltage">Voltage (V):</label>
+        <input type="number" id="voltage" placeholder="Enter voltage">
     
-    <label for="current">Current (A):</label>
-    <input type="number" id="current" placeholder="Enter current">
+        <label for="current">Current (A):</label>
+        <input type="number" id="current" placeholder="Enter current">
     
-    <label for="resistance">Resistance (Ω):</label>
-    <input type="number" id="resistance" placeholder="Enter resistance">
+        <label for="resistance">Resistance (Ω):</label>
+        <input type="number" id="resistance" placeholder="Enter resistance">
     
-    <button onclick="calculateOhmsLaw()">Calculate</button>
-    
-    <h3 id="result"></h3>
+        <h3 id="result"></h3>
+        <button class="calculate-btn" onclick="calculateOhmsLaw()">Calculate</button>
 
+<div class="result-box" id="result">
+    <strong>Result:</strong> <span id="calculation-result"></span>
+</div>
+
+    </div>
     <script src="ohm.js"></script>
 </body>
 </html>

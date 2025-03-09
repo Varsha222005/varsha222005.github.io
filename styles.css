@@ -1,7 +1,7 @@
 body{
     font-family: Arial,sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 .container {
     width: 600px;
@@ -33,7 +33,7 @@ input {
 button {
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #4248b2;
     color: rgb(5, 4, 4);
     border: none;
     border-radius: 5px;
@@ -42,7 +42,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0042b3;
 }
 button {
     display: block;
@@ -71,7 +71,7 @@ button:hover {
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #fbefef;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -117,7 +117,7 @@ button:hover {
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -138,7 +138,9 @@ h1 {
     font-size: 24px;
 }
 
+
 p {
+    text-align: center;
     color: #0e0d0d;
     font-size: 16px;
 }
@@ -154,24 +156,24 @@ p {
 
 .calculator-list a {
     text-decoration: none;
-    color: #007bff;
+    color: #2952bb;
     font-size: 18px;
     font-weight: bold;
     display: block;
     padding: 10px;
-    border: 2px solid #007bff;
+    border: 2px solid #0400ff;
     border-radius: 5px;
     transition: 0.3s;
 }
 
 .calculator-list a:hover {
-    background: #007bff;
-    color: rgb(8, 8, 8);
+    background: #1b11de;
+    color: rgb(2, 2, 2);
 }
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background: linear-gradient(135deg, #ffffff, #c3cfe2);
     text-align: center;
     margin: 0;
     padding: 0;
@@ -200,7 +202,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-p {
+p { 
     color: #100f0f;
     font-size: 16px;
 }
@@ -218,7 +220,7 @@ p {
 /* Buttons */
 .calculator-list a {
     text-decoration: none;
-    color: rgb(10, 9, 9);
+    color: rgb(255, 253, 253);
     font-size: 18px;
     font-weight: bold;
     display: block;
@@ -250,12 +252,12 @@ p {
 }
 body {
     background: linear-gradient(to right, #e8edf7, #edf1f8);
-    color: rgb(10, 9, 9);
+    color: rgb(25, 21, 21);
     font-family: Arial, sans-serif;
 }
 body 
 body {
-    background: #121212;
+    background: #000000;
     color: #e8e2e2;
 }
 input, select {
@@ -279,7 +281,7 @@ h1 {
     margin-top: 20px;
 }
 
-p {
+p { 
     font-size: 16px;
     width: 80%;
     margin: auto;
@@ -311,7 +313,7 @@ input {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #001aff;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -322,7 +324,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0006b3;
 }
 
 h2 {
@@ -386,7 +388,7 @@ input {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #0084ff;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -397,7 +399,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0039b3;
 }
 
 h2 {
@@ -453,7 +455,7 @@ p {
     font-size: 1.1em;
 }
 p {
-    text-align: justify;
+    text-align: center;
     max-width: 90%; /* Adjust width as needed */
     margin: 0 auto; /* Centers text block */
     font-size: 1em; /* Ensures uniform font size */
@@ -470,7 +472,7 @@ button {
     width: 90%;      /* Adjust width as needed */
     padding: 10px;
     margin: 20px auto; /* Auto margins will center it horizontally */
-    background-color: #0095FF;
+    background-color: #0080ff;
     border: none;
     border-radius: 5px;
     font-size: 1em;
@@ -478,9 +480,284 @@ button {
     text-align: center;
     
 }
+body {
+    background: linear-gradient(to bottom, #150699, #ff3333);
+    margin: 0;
+   
+}
+.description, .features-container {
+    color: white; /* Sets text color to white */
+}
+h1{
+    color: #f4f4f4;
+}
+
+.container h1 {
+    color: black;
+}
+
+body h2, body p {
+    color: white;
+}
+h2, p, label {
+    color: white;
+}
+.input-box {
+    background: white;  /* White box background */
+    padding: 20px;      /* Inner spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    width: 80%; /* Adjust width */
+    max-width: 400px; /* Limit max width */
+    margin: auto; /* Center the box */
+    text-align: center;
+}
+
+/* Set h2 and p to white for visibility */
+h2,p {
+    color: white;
+}
 
 
+/* Change labels and input text inside the box to black */
+.input-box label,
+.input-box input,
+.input-box h3 {
+    color: black;
+}
 
+/* Styling for input fields */
+.input-box input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+.input-box {
+    background: white;  /* White box background */
+    padding: 20px;      /* Inner spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    width: 80%; /* Adjust width */
+    max-width: 400px; /* Limit max width */
+    margin: auto; /* Center the box */
+    text-align: center;
+}
 
+/* Set h2 and p to white for visibility */
+h2, p {
+    color: white;
+}
 
+/* Change labels and input text inside the box to black */
+.input-box label,
+.input-box input,
+.input-box h3 {
+    color: black;
+}
 
+/* Styling for input fields */
+.input-box input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+.input-box {
+    background: white;  /* White box background */
+    padding: 20px;      /* Inner spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    width: 80%; /* Adjust width */
+    max-width: 400px; /* Limit max width */
+    margin: auto; /* Center the box */
+    text-align: center;
+}
+
+/* Set h2 and p to white for visibility */
+h2, p {
+    color: white;
+}
+
+/* Change labels and input text inside the box to black */
+.input-box label,
+.input-box input,
+.input-box h3 {
+    color: black;
+}
+
+/* Styling for input fields */
+.input-box input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+.ohm-law-box {
+    background: white;  /* White background box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for better visibility */
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Ensures the labels (Voltage, Current, Resistance, Result) remain BLACK */
+.ohm-law-box label,
+.ohm-law-box h3 {
+    color: black;
+    font-weight: bold;
+}
+
+.ohm-law-box {
+    background: white;  /* White background box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for better visibility */
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Ensures the labels (Voltage, Current, Resistance, Result) remain BLACK */
+.ohm-law-box label,
+.ohm-law-box h3 {
+    color: black;
+    font-weight: bold;
+}
+
+/* Styling input fields */
+.ohm-law-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Styling for the "Calculate" button */
+.input-box {
+    background: rgb(249, 249, 249);
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 10px;
+    align-items: center;
+    margin: auto;
+
+}
+
+/* Button hover effect */
+.input-box button:hover {
+    background: rgb(20, 11, 155);
+}
+.calculate-btn {
+    background: #6200ea; /* Purple button */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 90%;
+    max-width: 350px;
+    margin: 15px auto;
+    display: block;
+}
+
+.calculate-btn:hover {
+    background: #3700b3; /* Darker shade on hover */
+}
+
+.result-box {
+    background: rgb(249, 249, 249);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 90%;
+    max-width: 350px;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ohm-law-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically if needed */
+    width: 90%;
+    max-width: 400px; /* Adjust width if necessary */
+    margin: auto; /* Center the entire box */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+/*ohms law */
+.power-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.power-box input {
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #261f1f;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.power-box h2 {
+    margin-top: 20px;
+    color: #160f0f;
+    font-weight: bold;
+}
+.power-box input {
+    color: black; /* Ensures user-entered text is black */
+}
+
+.power-box input::placeholder {
+    color: black; /* Ensures placeholder text is black */
+    opacity: 1; /* Makes sure it's fully visible */
+}
+.power-box label {
+    color: black; /* Ensures label text is black */
+    font-weight: bold; /* Optional: Makes the text bold */
+}
+/*capaitor*/
+.container {
+    color: black; /* Ensures text inside the container is black */
+}
+
+.container label, 
+.container p, 
+.container span {
+    color: black !important;
+}

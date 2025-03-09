@@ -6,20 +6,28 @@
     <title>Power Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    p{
+        text-align: justify;
+    }
+</style>
 <body>
     <h1>Power Calculator</h1>
     <p>
 
-        The Power Calculator helps you determine electrical power (P) using different formulas based on voltage (V), current (I), and resistance (R). It supports AC and DC circuits, using equations like P = VI, P = I²R, and P = V²/R. This tool is essential for engineers, electricians, and students to analyze and design electrical systems efficiently.</p>
-    <label for="voltage">Voltage (V):</label>
-    <input type="number" id="voltage" placeholder="Enter Voltage">
-
-    <label for="current">Current (A):</label>
-    <input type="number" id="current" placeholder="Enter Current">
-
-    <button onclick="calculatePower()">Calculate</button>
-
-    <h2>Result: <span id="result"></span> W</h2>
+        The Power Calculator helps you determine electrical power (P) using different formulas based on voltage (V), current (I), and resistance (R). It supports AC and DC circuits, using equations like P = VI, P = I²R, and P = V²/R. This tool is essential for engineers, electricians, and students to analyze and design electrical systems efficiently.</p><br>
+        <div class="power-box">
+            <label for="voltage">Voltage (V):</label>
+            <input type="number" id="voltage" placeholder="Enter Voltage">
+        
+            <label for="current">Current (A):</label>
+            <input type="number" id="current" placeholder="Enter Current">
+            <button onclick="calculatePower()">Calculate</button>
+            <h2>Result: <span id="result"></span> W</h2>
+        </div>
+        
+        
+        
 
     <script src="power.js"></script>
 </body>

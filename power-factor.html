@@ -7,80 +7,101 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: justify;
-            padding: 50px;
-        }
-        h2{
+            background: linear-gradient(to bottom, #150699, #ff3333); /* Gradient like Ohm’s Law */
             text-align: center;
+            padding: 50px;
+            margin: 0;
+            height: 100%;
         }
+
+        h2 {
+            color: white;
+        }
+        
+        p {
+            color: white;
+            text-align: justify;
+        }
+
         .container {
             background: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
             max-width: 400px;
             margin: auto;
         }
+
         input {
             width: 90%;
-            padding: 10px;
+            padding: 12px;
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-size: 16px;
         }
+
         button {
-            background-color: #007BFF;
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
             color: white;
-            padding: 10px 15px;
             border: none;
             border-radius: 5px;
+            font-size: 18px;
             cursor: pointer;
+            transition: 0.3s;
         }
-       button :hover{
-        background-color: #0056b3;
-       }
-       .container label {
-    display: block; /* Make each label take full width */
-    text-align: center; /* Center the text */
-    font-weight: bold; /* Optional: make labels bold */
-    margin-bottom: 5px; /* Add some spacing */
-}
 
-
-          
-       #result {
-            text-align: center;
-            font-weight: bold;
-            margin-top: 15px;
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h2>Power Factor Correction Calculator</h2>
-        <p>Power Factor Correction Calculator
+    <h2>Power Factor Correction Calculator</h2>
+    
+    <p>Power Factor Correction Calculator
 
-            helps improve the power factor of an electrical system by determining the required capacitor value for correction.</p> <p>It uses the formula:
-            
-                Qc = P × (tan A(initial) - tan A(desired))
-                </p>
-            <p>where Qc is the reactive power to be compensated. The tool calculates the necessary capacitor size to reduce reactive power and improve efficiency, reducing energy losses and costs. Ideal for engineers optimizing AC power systems!</p>
+        helps improve the power factor of an electrical system by determining the required capacitor value for correction.</p> <p>It uses the formula:
+        
+            Qc = P × (tan A(initial) - tan A(desired))
+            </p>
+        <p>where Qc is the reactive power to be compensated. The tool calculates the necessary capacitor size to reduce reactive power and improve efficiency, reducing energy losses and costs. Ideal for engineers optimizing AC power systems!</p>
+
+   
+        <p>Enter the values below to calculate the required capacitor size.</p>
+        <div class="container">
         <label>Real Power (kW):</label>
         <input type="number" id="realPower" placeholder="Enter real power">
 
         <label>Current Power Factor:</label>
-        <input type="number" step="0.01" id="currentPF" placeholder="Enter current power factor">
+        <input type="number" id="currentPF" placeholder="Enter current power factor">
+
         <label>Desired Power Factor:</label>
-        <input type="number" step="0.01" id="desiredPF" placeholder="Enter desired power factor">
+        <input type="number" id="desiredPF" placeholder="Enter desired power factor">
 
-        <button id="calculate">Calculate</button>
+        <button onclick="calculate()">Calculate</button>
 
-        <p id="result">Required Capacitor Size: 0 kVAR</p>
+        <h3>Required Capacitor Size: <span id="result">0</span> kVAR</h3>
     </div>
 
-    <script src="power-factor.js"></script>
+    <script>
+        function calculate() {
+            let P = parseFloat(document.getElementById("realPower").value);
+            let PF1 = parseFloat(document.getElementById("currentPF").value);
+            let PF2 = parseFloat(document.getElementById("desiredPF").value);
+
+            if (isNaN(P) || isNaN(PF1) || isNaN(PF2) || PF1 >= 1 || PF2 >= 1 || PF1 <= 0 || PF2 <= 0) {
+                alert("Please enter valid values (Power Factor should be between 0 and 1)");
+                return;
+            }
+
+            let Qc = P * (Math.tan(Math.acos(PF1)) - Math.tan(Math.acos(PF2)));
+            document.getElementById("result").innerText = Qc.toFixed(2);
+        }
+    </script>
 
 </body>
 </html>
