@@ -1,26 +1,40 @@
 function calculateSuperposition() {
-    let voltageInputs = document.getElementById("voltages").value.split(",");
-    let resistanceInputs = document.getElementById("resistances").value.split(",");
+    const voltageInput = document.getElementById("voltages").value.trim();
+    const resistanceInput = document.getElementById("resistances").value.trim();
+    const resultElement = document.getElementById("result");
 
-    let voltages = voltageInputs.map(v => parseFloat(v.trim()));
-    let resistances = resistanceInputs.map(r => parseFloat(r.trim()));
-
-    if (voltages.some(isNaN) || resistances.some(isNaN) || resistances.length === 0) {
-        document.getElementById("result").innerText = "Please enter valid numerical values.";
+    if (!voltageInput || !resistanceInput) {
+        resultElement.innerText = "Please enter valid voltage and resistance values.";
         return;
     }
 
-    let totalResistance = resistances.reduce((sum, r) => sum + r, 0);
+    const voltages = voltageInput.split(",").map(v => parseFloat(v.trim()));
+    const resistances = resistanceInput.split(",").map(r => parseFloat(r.trim()));
 
-    if (totalResistance === 0) {
-        document.getElementById("result").innerText = "Total resistance cannot be zero.";
+    // Validate input numbers
+    if (voltages.some(isNaN) || resistances.some(isNaN)) {
+        resultElement.innerText = "Please enter only numerical values.";
         return;
     }
 
-    let results = voltages.map(v => {
+    if (resistances.some(r => r <= 0)) {
+        resultElement.innerText = "Resistance values must be greater than zero.";
+        return;
+    }
+
+    const totalResistance = resistances.reduce((sum, r) => sum + r, 0);
+    let totalCurrent = 0;
+    let currentValues = [];
+
+    let results = voltages.map((v, index) => {
         let current = v / totalResistance;
-        return `For voltage ${v}V: Current = ${current.toFixed(2)} A`;
+        totalCurrent += current;
+        let subscriptIndex = `<sub>${index + 1}</sub>`;
+        currentValues.push(`I${subscriptIndex}`);
+        return `When V${subscriptIndex} (${v}V) is acting → I${subscriptIndex}: ${current.toFixed(2)}A<br>Result: I${subscriptIndex}: ${current.toFixed(2)}A<br><br>`;
     });
 
-    document.getElementById("result").innerHTML = results.join("<br>");
+    results.push(`<strong>Total Current: ${currentValues.join(" + ")} = ${totalCurrent.toFixed(2)}A</strong>`);
+
+    resultElement.innerHTML = results.join("");
 }
